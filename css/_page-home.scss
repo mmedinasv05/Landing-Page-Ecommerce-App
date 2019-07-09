@@ -1,0 +1,212 @@
+body{
+    position: relative;
+}
+
+.section-wellcome{
+    width: 100%;
+    height: 100vh;
+    background: $color-gradient;
+    overflow: hidden;
+    .img-fluid-home{
+        height: 70%;
+        position: relative;
+        bottom: -31%;
+        left: 3%;
+    }
+    .img-bitmap{
+        display: none;
+    }
+    h1{
+        position: absolute;
+        top: 18%;
+        left: 48%;
+        color: $color-white;
+        font-size: 3rem;
+    }
+    p{
+        font-size: 14px;
+        color:  $color-white;
+        position: absolute;
+        left: 48%;
+        top: 33%;
+    }
+    .icon-playstore{
+        position: absolute;
+        left: 48%;
+        top: 38%;
+    }
+    .icon-appstore{
+        position: absolute;
+        left: 65%;
+        top: 38%;
+    }
+}
+
+.sections{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    img{
+        height: 70%;
+    }
+    h2{
+        font-size: 2rem;
+        color: $color-white;
+        padding: 0 0 0 175px;
+        font-weight: 800;
+    }
+    p{
+        font-size: 13px;
+        color: $color-white;
+        padding: 0 0 0 175px;
+    }
+}
+#sales{
+    h4,h2{
+        padding: 0 0 0 175px;
+    }
+    p{
+        font-size: 13px;
+        padding: 0 50px 0 175px;
+    }
+    a{
+        padding: 8px 15px;
+        background-color: #88D65C;
+        color: #ffffff;
+        font-family: $open-sans;
+        border-radius: 5px;
+        margin: 0 0 0 175px;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+.bg-dark{
+    background-color: #000000 !important;
+}
+.reservation{
+    background-color: $color-primary;
+}
+.promotion{
+    background-color: $color-second;
+}
+
+.item-collapse{
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+    &:hover{
+        text-decoration: none;
+        color: #000000;
+    }
+}
+.logo-footer{
+    height: 1.5rem; 
+    margin-left: 100px;
+}
+.img-copy{
+    margin-left: 100px;
+}
+.fa-twitter{
+    color: #ffffff;
+    margin-right: 100px;
+}
+.fa-instagram,
+.fa-facebook-f{
+    color: #ffffff;
+    margin-right: 40px;
+}
+.text-footer{
+    font-size: 12px;
+    margin-right: 100px;
+}
+form{
+    width: 80%;
+    height: 350px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+/*Extra Small devices (landscape phones, 575px and up)*/
+@media (max-width: 411px) {
+    .section-wellcome{
+        width: 100%;
+        height: 145vh;
+        background: $color-gradient;
+        .img-fluid-home{
+            display: none;
+        }
+        .img-bitmap{
+            display: block;
+            position: absolute;
+            top: 29.2%;
+            left: 5%;
+        }
+        h1{
+            font-size: 2.5rem;
+            top: 8%;
+            left: 10%;
+            text-align: center;
+        }
+        p{
+            left: 2.5%;
+            top: 17%;
+        }
+        .icon-playstore{
+            left: 10%;
+            top: 22%;
+        }
+        .icon-appstore{
+            left: 55%;
+            top: 22%;
+        }
+    }
+    .order-after{
+        order: -1;
+    }
+    .sections{
+        width: 100%;
+        height: 130vh;
+        img{
+            height: 70%;
+        }
+        h2{
+            text-align: center;
+            padding: 0;
+            padding-top: 50px;
+            font-size: 3rem;
+        }
+        p{
+            font-size: 15px;
+            color: $color-white;
+            padding: 10px 5% 0 5%;
+            text-align: center;
+        }
+    }
+    #sales{
+        h4,h2{
+            padding: 10px 0 10px 15px !important;
+            text-align: center;
+        }
+        p{
+            font-size: 13px;
+            padding: 10px 0 10px 15px;
+        }
+        a{
+            margin: 10px 0 40px 15px;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}

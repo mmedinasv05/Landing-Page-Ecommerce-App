@@ -7,6 +7,7 @@ body{
     height: 100vh;
     background: $color-gradient;
     overflow: hidden;
+    position: relative;
     .img-fluid-home{
         height: 70%;
         position: relative;
@@ -18,7 +19,7 @@ body{
     }
     h1{
         position: absolute;
-        top: 18%;
+        top: 35%;
         left: 48%;
         color: $color-white;
         font-size: 3rem;
@@ -28,17 +29,17 @@ body{
         color:  $color-white;
         position: absolute;
         left: 48%;
-        top: 33%;
+        top: 62%;
     }
     .icon-playstore{
         position: absolute;
         left: 48%;
-        top: 38%;
+        top: 72%;
     }
     .icon-appstore{
         position: absolute;
         left: 65%;
-        top: 38%;
+        top: 72%;
     }
 }
 
@@ -130,7 +131,16 @@ form{
     flex-wrap: wrap;
 }
 
-
+.item-collapse{
+    &::before{
+        content: "\002B";
+        color: #0071BB;
+        font-weight: 900;
+        display: inline-block;
+        width: 1rem; 
+        margin-left: -1em;
+    }
+}
 
 
 
@@ -138,7 +148,7 @@ form{
 
 
 /*Extra Small devices (landscape phones, 575px and up)*/
-@media (max-width: 411px) {
+@media (max-width: 575px) {
     .section-wellcome{
         width: 100%;
         height: 145vh;
@@ -149,26 +159,28 @@ form{
         .img-bitmap{
             display: block;
             position: absolute;
-            top: 29.2%;
-            left: 5%;
+            top: 50%;
+            left: 15%;
         }
         h1{
             font-size: 2.5rem;
-            top: 8%;
-            left: 10%;
+            top: 15%;
+            left: 20%;
             text-align: center;
         }
         p{
-            left: 2.5%;
-            top: 17%;
+            left: 5%;
+            top: 30%;
+            padding: 0 50px;
+            text-align: center;
         }
         .icon-playstore{
-            left: 10%;
-            top: 22%;
+            left: 20%;
+            top: 40%;
         }
         .icon-appstore{
             left: 55%;
-            top: 22%;
+            top: 40%;
         }
     }
     .order-after{
@@ -176,9 +188,9 @@ form{
     }
     .sections{
         width: 100%;
-        height: 130vh;
+        height: 140vh;
         img{
-            height: 70%;
+            height: 80%;
         }
         h2{
             text-align: center;
@@ -194,7 +206,10 @@ form{
         }
     }
     #sales{
-        h4,h2{
+        h4{
+            padding: 40px 0 20px 15px !important;
+        }
+        h2{
             padding: 10px 0 10px 15px !important;
             text-align: center;
         }

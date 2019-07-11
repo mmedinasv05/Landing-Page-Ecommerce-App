@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 .w-full-screen {
   width: 100%;
@@ -140,6 +141,7 @@ body {
   height: 100vh;
   background: linear-gradient(270deg, #8BDA5A -10.32%, #1435B9 100%);
   overflow: hidden;
+  position: relative;
 }
 .section-wellcome .img-fluid-home {
   height: 70%;
@@ -152,7 +154,7 @@ body {
 }
 .section-wellcome h1 {
   position: absolute;
-  top: 18%;
+  top: 35%;
   left: 48%;
   color: #FFFFFF;
   font-size: 3rem;
@@ -162,17 +164,17 @@ body {
   color: #FFFFFF;
   position: absolute;
   left: 48%;
-  top: 33%;
+  top: 62%;
 }
 .section-wellcome .icon-playstore {
   position: absolute;
   left: 48%;
-  top: 38%;
+  top: 72%;
 }
 .section-wellcome .icon-appstore {
   position: absolute;
   left: 65%;
-  top: 38%;
+  top: 72%;
 }
 
 .sections {
@@ -271,8 +273,17 @@ form {
   flex-wrap: wrap;
 }
 
+.item-collapse::before {
+  content: "+";
+  color: #0071BB;
+  font-weight: 900;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1em;
+}
+
 /*Extra Small devices (landscape phones, 575px and up)*/
-@media (max-width: 411px) {
+@media (max-width: 575px) {
   .section-wellcome {
     width: 100%;
     height: 145vh;
@@ -284,26 +295,28 @@ form {
   .section-wellcome .img-bitmap {
     display: block;
     position: absolute;
-    top: 29.2%;
-    left: 5%;
+    top: 50%;
+    left: 15%;
   }
   .section-wellcome h1 {
     font-size: 2.5rem;
-    top: 8%;
-    left: 10%;
+    top: 15%;
+    left: 20%;
     text-align: center;
   }
   .section-wellcome p {
-    left: 2.5%;
-    top: 17%;
+    left: 5%;
+    top: 30%;
+    padding: 0 50px;
+    text-align: center;
   }
   .section-wellcome .icon-playstore {
-    left: 10%;
-    top: 22%;
+    left: 20%;
+    top: 40%;
   }
   .section-wellcome .icon-appstore {
     left: 55%;
-    top: 22%;
+    top: 40%;
   }
 
   .order-after {
@@ -312,10 +325,10 @@ form {
 
   .sections {
     width: 100%;
-    height: 130vh;
+    height: 140vh;
   }
   .sections img {
-    height: 70%;
+    height: 80%;
   }
   .sections h2 {
     text-align: center;
@@ -330,7 +343,10 @@ form {
     text-align: center;
   }
 
-  #sales h4, #sales h2 {
+  #sales h4 {
+    padding: 40px 0 20px 15px !important;
+  }
+  #sales h2 {
     padding: 10px 0 10px 15px !important;
     text-align: center;
   }
@@ -362,55 +378,223 @@ form {
   background: linear-gradient(270deg, #8BDA5A -10.32%, #1435B9 100%);
 }
 
-.title-small {
-  font-size: 2rem;
-  font-weight: bold;
-  padding-left: 50px;
-  padding-bottom: 10px;
+.img-fluid-responsive {
+  width: 90%;
 }
 
-.paragraph-small {
-  font-size: 12px;
-  padding-left: 50px;
-  padding-right: 70px;
-}
-
-.paragraph-sm {
-  font-size: 11px;
-  padding: 0 20px;
-}
-
-.report {
+.bg-blue {
   background-color: #1335B9;
 }
 
-.gb-gray-lite {
+.gb-blue-dark {
+  background-color: #000D44;
+}
+
+.bg-gray-lite {
   background-color: #F5F5F5;
+}
+
+.title-sm {
+  font-size: 1.7rem;
+  color: #1D42B1;
+  padding: 0 0 0 20px;
+  font-weight: bold;
+}
+
+.title-md {
+  font-size: 2rem;
+  padding: 0 40px 0 60px;
+  font-weight: bold;
+}
+
+.p-md {
+  font-size: 14px;
+  padding: 0 40px 0 60px;
+}
+
+.p-extra-sm {
+  font-size: 11px;
+  padding: 5px 20px;
+}
+
+.img-brands {
+  width: 18%;
+}
+
+.title-main {
+  color: #ffffff;
+  font-size: 4rem;
+  z-index: 1;
+}
+
+.p-main {
+  color: #ffffff;
+  font-size: 1rem;
+  z-index: 1;
+  text-align: center;
+}
+
+.btn-brands {
+  padding: 10px 30px;
+  background-color: #88D65C;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.btn-brands:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.card-plans {
+  width: 95%;
+  height: 440px;
+  margin: 50px 0;
+}
+.card-plans .card-border {
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(270deg, #031FC6 -3.85%, #8BDA5A 101.04%);
+}
+.card-plans .card-plans-header {
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+}
+.card-plans .card-plans-content {
+  width: 100%;
+  height: 360px;
+  background-color: #ffffff;
+  position: relative;
+}
+.card-plans .card-plans-content ul li {
+  font-size: 13px;
+  list-style: none;
+}
+.card-plans .card-plans-content ul li::before {
+  content: "•";
+  color: #D8D8D8;
+  font-weight: 900;
+  display: inline-block;
+  width: 1rem;
+  margin-left: -1em;
+}
+.card-plans .btn-plans {
+  padding: 10px 50px;
+  background-color: #1335B9;
+  color: #ffffff;
+  border-radius: 5px;
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+}
+.card-plans .btn-plans:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+.card-plans .btn-plans2 {
+  background-color: #C8C8C8;
+}
+
+.arrow-view-more {
+  color: #88D65C;
+  margin: 10px 0 0 60px;
+  font-size: 16px;
+}
+.arrow-view-more:hover {
+  text-decoration: none;
+  color: #88D65C;
+}
+
+.form-contact-us {
+  width: 70%;
+  background-color: #ffffff;
+}
+.form-contact-us .input-controls {
+  width: 90%;
+  height: 40px;
+  margin: 40px 0;
+  padding: 0 0 0 10px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.btn-contact {
+  padding: 10px 30px;
+  background-color: #1335B9;
+  color: #ffffff;
+  border-radius: 5px;
+}
+.btn-contact:hover {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 /*Extra Small devices (landscape phones, 575px and up)*/
 @media (max-width: 575px) {
-  .section-commerce {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    background-image: url(../img/bg-commerce-min.png);
-  }
-
   .hidden-element {
     display: none;
   }
 
-  .paragraph-small {
-    font-size: 14px;
-  }
-
-  .text-center-responsive {
+  .title-main {
     text-align: center;
   }
 
-  .title-small {
+  .p-main {
+    font-size: 1.3rem;
+    padding: 0 20px;
+  }
+
+  .title-sm {
+    font-size: 2.5rem;
+    padding: 20px 0 20px 20px;
+  }
+
+  .p-extra-sm {
+    font-size: 1rem;
+    padding: 5px 20px;
+  }
+
+  .title-md {
+    font-size: 2.5rem;
+    padding: 0;
+    padding: 25px 20px 0 20px;
     text-align: center;
+  }
+
+  .p-md {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 20px 0 20px;
+  }
+
+  .img-brands {
+    width: 50%;
+  }
+
+  .arrow-view-more {
+    color: #88D65C;
+    margin: 0;
+    font-size: 16px;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+
+  .form-contact-us {
+    width: 100%;
+    height: 400px;
+    background-color: #F5F5F5;
+  }
+  .form-contact-us .input-controls {
+    width: 90%;
+    height: 50px;
+    margin: 20px 0;
+    padding: 0 0 0 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #000000;
   }
 }
 
